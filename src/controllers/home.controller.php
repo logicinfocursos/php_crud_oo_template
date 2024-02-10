@@ -1,6 +1,6 @@
 <?php
  require_once 'src/models/repositories/Product.repository.php';
- include_once 'src/views/pages/home.page.php';
+ include_once 'src/views/pages/home/home.page.php';
 class HomeController
 {
     public function run()

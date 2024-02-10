@@ -4,6 +4,6 @@ class ProductRepository extends Repositories
 {
     public function __construct()
     {
-        parent::__construct('http://localhost:3000/', 'products');
+        parent::__construct('products');
     }
 }

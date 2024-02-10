@@ -1,21 +1,22 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "product1",
-      "price": 111,
-      "status": 1
+      "name": "product1 xxxxxxxxxx",
+      "price": "555",
+      "categoryid": "2",
+      "id": "1"
     },
     {
       "name": "product2 xxxxxxxxxxx",
       "price": "222",
-      "id": "2",
-      "status": 1
+      "categoryid": "3",
+      "id": "2"
     },
     {
       "id": "3",
       "name": "product3",
       "price": 333,
+      "categoryid": "3",
       "status": 1
     }
   ],

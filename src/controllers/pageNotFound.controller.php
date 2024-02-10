@@ -1,6 +1,6 @@
 <?php
 
-include_once 'src/views/pages/pageNotFound.page.php';
+include_once 'src/views/pages/pageNotFound/pageNotFound.page.php';
 class PageNotFoundController
 {
     public function run()

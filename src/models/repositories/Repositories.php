@@ -2,11 +2,13 @@
 require_once 'src/models/interfaces/IRepositories.php';
 abstract class Repositories implements IRepositories
 {
-    protected $apiUrl ;
+    protected $apiUrl;
+    protected $baseUrl='http://localhost:3000/';
 
-    public function __construct($baseUrl, $tableName)
+    public function __construct($tableName)
     {
-        $this->apiUrl = $baseUrl . $tableName;
+      
+        $this->apiUrl = $this->baseUrl . $tableName;
     }
 
     protected function fetchData($url, $method = 'GET', $data = null)
