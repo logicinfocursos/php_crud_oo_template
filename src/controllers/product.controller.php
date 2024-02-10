@@ -1,7 +1,11 @@
 <?php
 require_once 'src/models/repositories/Product.repository.php';
 require_once 'src/models/repositories/Category.repository.php';
+
 include_once 'src/views/pages/products/product.page.php';
+
+use Models\Repositories\ProductRepository;
+use Models\Repositories\CategoryRepository;
 class ProductController
 {
     public function run()

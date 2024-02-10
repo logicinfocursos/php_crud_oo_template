@@ -1,4 +1,6 @@
 <?php
+namespace Models\Repositories;
+
 require_once 'src/models/repositories/Repositories.php';
 
 class CategoryRepository extends Repositories

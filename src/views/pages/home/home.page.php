@@ -1,11 +1,10 @@
 <?php
-include_once "src/views/components/breadcrumps.component.php";
+
 function homePage($data)
 {
     $products = $data['products'];
     $title = $data['title'];
 
-    breadcrumps($title);
     ?>
 
     <h1 class="mt-3">
@@ -59,7 +58,5 @@ function homePage($data)
         </div>
 
     </div>
-
-
 
 <?php }

@@ -1,13 +1,20 @@
 <?php
-require_once 'src/models/interfaces/IRepositories.php';
+
+namespace Models\Repositories;
+
+require_once 'src/models/repositories/IRepositories.php';
+require_once 'src/models/repositories/Dotenv.php';
+
+
 abstract class Repositories implements IRepositories
 {
     protected $apiUrl;
-    protected $baseUrl='http://localhost:3000/';
+    protected $baseUrl;
 
     public function __construct($tableName)
     {
-      
+        $this->baseUrl = Dotenv::get('BASE_URL');
+
         $this->apiUrl = $this->baseUrl . $tableName;
     }
 

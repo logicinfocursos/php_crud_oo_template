@@ -1,23 +1,16 @@
 {
   "products": [
     {
-      "name": "product1 xxxxxxxxxx",
+      "name": "product1 adoçante",
       "price": "555",
       "categoryid": "2",
       "id": "1"
     },
     {
-      "name": "product2 xxxxxxxxxxx",
-      "price": "222",
-      "categoryid": "3",
+      "name": "product2 xxxxxxx zzzzzzzzzzz",
+      "price": "111",
+      "categoryid": "1",
       "id": "2"
-    },
-    {
-      "id": "3",
-      "name": "product3",
-      "price": 333,
-      "categoryid": "3",
-      "status": 1
     }
   ],
   "categories": [

@@ -13,10 +13,10 @@ function navbar()
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/home">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">about</a>
+                        <a class="nav-link" href="/about">sobre nós</a>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,8 @@
 <?php
 require_once 'src/models/repositories/Product.repository.php';
 
+use Models\Repositories\ProductRepository;
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $productRepo = new ProductRepository();
