@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "product1",
+      "price": 111,
+      "status": 1
+    },
+    {
+      "name": "product2 xxxxxxxxxxx",
+      "price": "222",
+      "id": "2",
+      "status": 1
+    },
+    {
+      "id": "3",
+      "name": "product3",
+      "price": 333,
+      "status": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "category1",
+      "status": 1
+    },
+    {
+      "id": "2",
+      "name": "category2",
+      "status": 1
+    },
+    {
+      "id": "3",
+      "name": "category3",
+      "status": 1
+    }
+  ]
+}
