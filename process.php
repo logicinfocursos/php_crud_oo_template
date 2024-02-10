@@ -1,13 +1,12 @@
 <?php
 require_once 'src/models/repositories/Product.repository.php';
 
-use Models\Repositories\ProductRepository;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $productRepo = new ProductRepository();
 
-    $productId = $_POST['product-id'];
+    $productId = strval($_POST['product-id']);
     $operation = $_POST['product-operation'];
 
     // Operação de inclusão ou atualização
@@ -15,12 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $productName = $_POST['product-name'];
         $productPrice = $_POST['product-price'];
-        $categoryid = $_POST['product-categoryid'];
+        $categoryId = strval($_POST['product-categoryId']);
 
         $data = [
             'name' => $productName,
             'price' => $productPrice,
-            'categoryid' => $categoryid,
+            'categoryId' => $categoryId,
         ];
 
         if ($operation === 'add') {

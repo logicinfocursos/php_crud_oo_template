@@ -1,6 +1,6 @@
 <?php
 
-namespace Models\Repositories;
+
 interface IRepositories
 {
     public function getAll();

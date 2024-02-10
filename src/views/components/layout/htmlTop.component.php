@@ -1,5 +1,5 @@
 <?php
-include_once "src/views/components/navbar.component.php";
+include_once "src/views/components/layout/navbar.component.php";
 function htmlTop()
 { 
     ?>

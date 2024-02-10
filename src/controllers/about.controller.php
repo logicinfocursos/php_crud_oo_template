@@ -1,7 +1,8 @@
 <?php
 
+require_once 'src/controllers/Controllers.php';
 include_once 'src/views/pages/about/about.page.php';
-class AboutController
+class AboutController extends Controllers
 {
     public function run()
     {

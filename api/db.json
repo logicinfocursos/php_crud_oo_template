@@ -3,14 +3,26 @@
     {
       "name": "product1 adoçante",
       "price": "555",
-      "categoryid": "2",
+      "categoryId": "1",
       "id": "1"
     },
     {
       "name": "product2 xxxxxxx zzzzzzzzzzz",
       "price": "111",
-      "categoryid": "1",
+      "categoryId": "3",
       "id": "2"
+    },
+    {
+      "name": "product3 adoçante xxxxxxxxxxx",
+      "price": "555",
+      "categoryId": "2",
+      "id": "3"
+    },
+    {
+      "id": "f294",
+      "name": "novissimo",
+      "price": "6666",
+      "categoryId": "1"
     }
   ],
   "categories": [
@@ -20,12 +32,12 @@
       "status": 1
     },
     {
-      "id": "2",
+      "id": "1",
       "name": "category2",
       "status": 1
     },
     {
-      "id": "3",
+      "id": "1",
       "name": "category3",
       "status": 1
     }

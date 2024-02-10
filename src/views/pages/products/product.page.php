@@ -1,6 +1,6 @@
 <?php
-include_once "src/views/components/breadcrumps.component.php";
-include_once "src/views/pages/products/productForm.component.php";
+include_once "src/views/components/layout/breadcrumps.component.php";
+include_once "src/views/components/products/productForm.component.php";
 
 
 function productPage($data)
@@ -22,7 +22,7 @@ function productPage($data)
 
     <div class="card">
         <div class="card-header">
-        <?= $operation !== "add" ? "#id:" . $product["id"] : "" ?> <span class="ms-2 badge rounded-pill text-bg-<?= $badgeClass ?>">
+        <?= $operation !== "add" ? "#id:" . $product->id : "" ?> <span class="ms-2 badge rounded-pill text-bg-<?= $badgeClass ?>">
                 <?= $badgeText ?>
             </span>
         </div>

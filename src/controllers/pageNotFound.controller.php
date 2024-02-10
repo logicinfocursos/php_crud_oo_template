@@ -1,7 +1,7 @@
 <?php
-
+require_once 'src/controllers/Controllers.php';
 include_once 'src/views/pages/pageNotFound/pageNotFound.page.php';
-class PageNotFoundController
+class PageNotFoundController extends Controllers
 {
     public function run()
     {

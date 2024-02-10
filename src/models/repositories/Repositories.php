@@ -1,7 +1,5 @@
 <?php
 
-namespace Models\Repositories;
-
 require_once 'src/models/repositories/IRepositories.php';
 require_once 'src/models/repositories/Dotenv.php';
 
@@ -36,13 +34,23 @@ abstract class Repositories implements IRepositories
 
     public function getAll()
     {
-        return $this->fetchData($this->apiUrl);
+        $data = $this->fetchData($this->apiUrl);
+        $items = [];
+
+        foreach ($data as $itemData) {
+            $items[] = $this->mapToItem($itemData);
+        }
+
+        return $items;
     }
 
+    abstract protected function mapToItem($data);
     public function getByKey($key)
     {
-        $url = $this->apiUrl . '/' . $key;
-        return $this->fetchData($url);
+        $url = $this->apiUrl . '/' . strval($key);
+        $data = $this->fetchData($url);
+
+        return $data ? $this->mapToItem($data) : null;
     }
 
     public function add($data)

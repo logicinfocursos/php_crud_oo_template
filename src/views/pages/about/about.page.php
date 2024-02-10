@@ -1,6 +1,6 @@
 <?php
 
-include_once "src/views/components/breadcrumps.component.php";
+include_once "src/views/components/layout/breadcrumps.component.php";
 function aboutPage($data)
 {
     $title = $data['title'];

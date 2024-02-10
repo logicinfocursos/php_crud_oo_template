@@ -2,18 +2,17 @@
 //require_once 'autoload.php';
 
 require_once 'src/models/repositories/Product.repository.php';
+require_once 'src/controllers/Controllers.php';
 include_once 'src/views/pages/home/home.page.php';
 
-use Models\Repositories\ProductRepository;
 
-class HomeController
+class HomeController extends Controllers
 {
     public function run()
     {
 
         $productRepository = new ProductRepository();
         $products = $productRepository->getAll();
-
 
         $data['title'] = 'página inicial';
         $data['products'] = $products;
